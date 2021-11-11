@@ -13,14 +13,16 @@ Los usuarios cuando quieren contratar un producto lo buscan en internet, y llega
 Existen diferentes tipos de conversiones siendo los más comunes:
 
     • simplemente el contacto con el call center ya sea a través de una llamada o del envío del formulario.
-    • Contratación del producto Nuestro ejercicio
+    • Contratación del producto
+Nuestro ejercicio
 El cliente es una compañía de coches y nos pide que le realicemos informes sobre las visitas a las landings de sus productos y las conversiones.
 Datos
 
 Tenemos dos tipos de ficheros:
 
 1) De navegación, en el que se recogen los datos de navegación de los usuarios. Este fichero contiene las siguientes columnas:
-uuid(string): Es utilizado para crear identificadores únicos universales que permitan reconocer e distinguir un objeto dentro de un sistema, o el mismo objeto en diferentes contextos. En este caso el objeto es el usuario. gclid(string): El ID de clic de Google (GCLID) es un parámetro que se transfiere a la URL a través de los clics en anuncios.
+uuid(string): Es utilizado para crear identificadores únicos universales que permitan reconocer e distinguir un objeto dentro de un sistema, o el mismo objeto en diferentes contextos. En este caso el objeto es el usuario.
+gclid(string): El ID de clic de Google (GCLID) es un parámetro que se transfiere a la URL a través de los clics en anuncios.
 id_user(string): identificador único de usuario de la aplicación que se comunica con el call center
 user_recurrent(boolean): nos indica si el usuario es recurrente (true), es decir, si ha entrado más de una vez al conjunto de landings de la compañía. Si no es recurrente (false), significa que el usuario está entrando por primera vez al conjunto de landings.
 url_landing (string): cuando el usuario hace click en un anuncio o sitelink se lo envía a una landing con una url que contiene varios datos interesantes para su análisis. A continuación, explicamos cada parte de esta url.
@@ -31,6 +33,7 @@ https://www.metropolis.com/es/  es la url base
 
 Después de la url base le sigue la landing específica a la cual ha ido el usuario: home (que sería la web principal), o una landing de algún modelo de coche.
 Luego siguen: gclid, iduser, uuid que ya los hemos definido anteriormente Finalmente tenemos los datos de las campañas:
+
     • camp: id de la campaña
 
     • adg: id del adgroup
@@ -56,7 +59,7 @@ Los sitelinks suelen depender solo de la campaña. Es decir, una campaña puede 
 Preguntas a responder
 
     • Cuántas visitas recibe en el día el cliente
-o Cuántas de ellas convierten y cuántas no (en %)
+    • Cuántas de ellas convierten y cuántas no (en %)
     • Por tipo de conversión (CALL o FORM), ¿cuántas hay de cada una?
     • Porcentaje de usuarios recurrentes sobre el total de usuarios
     • Coche más visitado. ¿Es el que más convierte?
